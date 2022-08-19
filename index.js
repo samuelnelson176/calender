@@ -29,4 +29,7 @@ let days = "";
 for(let i=1; i<=31; i++){
     days += `<div>${i}</div>`;
     monthDays.innerHTML = days;
-}
+};
+
+const lastDay = new Date(date.getFullYear(), date.getMonth()+1, 0);
+
